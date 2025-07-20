@@ -23,4 +23,4 @@ while True:
         print("You Win")
         break
     else:
-        print("You lose.Try again"
+        print("You lose.Try again")
