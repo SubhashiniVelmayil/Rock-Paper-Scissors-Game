@@ -1,26 +1,73 @@
-###Rock paper scissors game
-import random
-while True:
-    my_answer=input("Choose: rock, paper or scissors:")
-    my_answer=my_answer.lower()
-    if my_answer=="quit":
-        break
-    if my_answer!="rock" and my_answer!="paper" and my_answer!="scissors":
-        print("Please choose a correct answer")
-        continue
-    computer_answer=random.choice(["rock","paper","scissors"])
-    print(f"Computer choice:{computer_answer}")
-    if my_answer==computer_answer:
-        print("You tied")
-        continue
-    elif my_answer=="paper" and computer_answer=="rock":
-        print("You Win")
-        break
-    elif my_answer=="rock" and computer_answer=="scissors":
-        print("You Win")
-        break
-    elif my_answer=="scissors" and computer_answer=="paper":
-        print("You Win")
-        break
-    else:
-        print("You lose.Try again")
+🎮 Rock Paper Scissors Game
+📌 Project Description
+
+This is a simple command-line Rock Paper Scissors game developed using Python.
+The user plays against the computer, which randomly selects rock, paper, or scissors.
+
+🛠 Technologies Used
+
+Python 3
+
+random module
+
+🚀 How to Run the Project
+
+Install Python (if not already installed)
+
+Save the file as rock_paper_scissors.py
+
+Open terminal or command prompt
+
+Run the program:
+
+python rock_paper_scissors.py
+
+🎯 How the Game Works
+
+The user enters:
+
+rock
+
+paper
+
+scissors
+
+or quit to exit the game
+
+The computer randomly selects one option.
+
+The winner is decided based on standard game rules:
+
+Rock beats Scissors
+
+Scissors beats Paper
+
+Paper beats Rock
+
+The game continues until:
+
+The user wins
+
+The user types quit
+
+🧠 Features
+
+✔ User input validation
+✔ Random computer selection
+✔ Loop until win or quit
+✔ Clear output messages
+
+📷 Sample Output
+Choose: rock, paper or scissors (or type 'quit' to exit): rock
+Computer choice: scissors
+You Win!
+
+📌 Future Improvements
+
+Add score tracking
+
+Add multiple rounds
+
+Add graphical interface (Tkinter or Pygame)
+
+Convert to web version using Streamlit
